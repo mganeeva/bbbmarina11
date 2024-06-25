@@ -21,9 +21,3 @@ jobs:
     steps:
       - name: deploy-development
         run: echo "It is deployment for Development"
-  deployment-prod:
-    runs-on: ubuntu-latest
-    environment: Production
-    steps:
-      - name: deploy-production
-        run: echo "It is deployment for Production"        
