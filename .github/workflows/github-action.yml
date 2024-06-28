@@ -23,6 +23,6 @@ jobs:
     steps:
       - name: deploy-staging
         run: echo "It is deployment for Staging"
-      - name: Sleep for <3 minutes, test
+      - name: Sleep for 2 minutes, test
         run: sleep 100
         
