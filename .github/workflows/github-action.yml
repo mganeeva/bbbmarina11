@@ -15,7 +15,7 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - name: Sleep for 5 minutes, 2
+      - name: Sleep for 5 minutes, test
         run: sleep 300      
   deployment-stg:
     runs-on: ubuntu-latest
@@ -23,6 +23,6 @@ jobs:
     steps:
       - name: deploy-staging
         run: echo "It is deployment for Staging"
-      - name: Sleep for 5 minutes
+      - name: Sleep for 5 minutes, test
         run: sleep 300
         
