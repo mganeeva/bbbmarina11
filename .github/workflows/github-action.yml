@@ -17,12 +17,12 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: Sleep for 5 minutes, test
         run: sleep 150      
-  deployment-stg:
+  deployment-prod:
     runs-on: ubuntu-latest
-    environment: Staging
+    environment: Production
     steps:
-      - name: deploy-staging
-        run: echo "It is deployment for Staging"
+      - name: deploy-production
+        run: echo "It is deployment for Production"  
       - name: Sleep for 2 minutes, test
         run: sleep 100
         
